@@ -6,11 +6,11 @@ version 1.01 du 17/11/2025
 
 Affichage sur le Terminal : Temps de cycle   moyen 0.02   max 0.15   >0.08 9   >>0.15 1
 
-Création de Class : yTempsCycle TempsCycle("Temps de cycle", 4, 0.08, 0.15);
- 	"Temps de cycle" : Nom modifiable
-		4  :  Nombre de seconde entre deux affichage
-		0.08 : Seuil 1 en ms	
- 	0.15 : Seuil 2 en ms
+Création de Class : yTempsCycle TempsCycle("Temps de cycle", 4, 0.08, 0.15);  
+ 	"Temps de cycle" : Nom modifiable  
+	4  :  Nombre de seconde entre deux affichage  
+	0.08 : Seuil 1 en ms  	
+ 	0.15 : Seuil 2 en ms  
  
 Dans la boucle à surveiller : TempsCycle.loop();
 
