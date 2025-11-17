@@ -21,10 +21,10 @@ Pour limiter l'impact sur le temps de cycle la mise en forme est decomposée op�
 le serial.print se fait 10 carcatères pas 10 caractères ce qui limite le temps max à 0,15ms
 (temps équivalent aux opérations les plus gourmantes de mise en forme)
 
-sur MEGA2560  avec monitor_speed = 115200
-       Par rapport à un Mega affichant "Hello World"
-       RAM: 645 bytes from 8192 bytes
-       Flash: 4372 bytes from 253952 bytes
-Temps mouyen d'éxécution 0.02ms
-Temps maximum 0.12ms  (seulement 10 tours de cycle > 8ms)
+sur MEGA2560  avec monitor_speed = 115200  
+       Par rapport à un Mega affichant "Hello World"  
+       RAM: 645 bytes from 8192 bytes  
+       Flash: 4372 bytes from 253952 bytes  
+Temps mouyen d'éxécution 0.02ms  
+Temps maximum 0.15ms  (seulement 10 tours de cycle > 8ms)  
 
