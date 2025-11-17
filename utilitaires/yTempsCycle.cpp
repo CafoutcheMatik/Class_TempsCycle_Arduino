@@ -4,6 +4,15 @@
  *  Permet surveiller le temp de cycle sur la base des micro seconde
  *  hervé CHUTEAU pour le Bistromatik
  *  version 1.01 du 17/11/2025
+ * 
+ *  Affichage sur le Terminal : Temps de cycle   moyen 0.02   max 0.02   >0.08 0   >>0.15 0
+ * 
+ *  Création de Class : yTempsCycle TempsCycle("Temps de cycle", 4, 0.08, 0.15);
+ * 
+ *  Dans la boucle à surveiller : TempsCycle.loop();
+ * 
+ *  TempsCycle.newTxt : nouveau affichage formaté
+ *  TempsCycle.texte1 et TempsCycle.texte2 : affichage 
  *
  *  Pour limiter l'impact sur le temps de cycle la mise en forme est decomposée opération par opération
  *  le serial.print se fait 10 carcatères pas 10 caractères ce qui limite le temps max à 0,12ms
