@@ -9,12 +9,12 @@ Affichage sur le Terminal : Temps de cycle   moyen 0.02   max 0.15   >0.08 9   >
 Création de Class : yTempsCycle TempsCycle("Temps de cycle", 4, 0.08, 0.15);  
  	"Temps de cycle" : Nom modifiable  
 	4  :  Nombre de seconde entre deux affichage  
-	0.08 : Seuil 1 en ms  	
- 	0.15 : Seuil 2 en ms  
+	0.08 : Seuil 1 en ms    	
+ 	0.15 : Seuil 2 en ms    
  
 Dans la boucle à surveiller : TempsCycle.loop();
 
-TempsCycle.newTxt : nouveau affichage formaté
+TempsCycle.newTxt : nouveau affichage formaté  
 TempsCycle.texte1 et TempsCycle.texte2 : affichage 
 
 Pour limiter l'impact sur le temps de cycle la mise en forme est decomposée opération par opération
