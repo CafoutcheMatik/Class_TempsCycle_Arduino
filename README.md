@@ -23,7 +23,7 @@ le serial.print se fait 10 carcatères pas 10 caractères ce qui limite le temps
 
 sur MEGA2560  avec monitor_speed = 115200  
        Par rapport à un Mega affichant "Hello World"  
-       RAM: 645 bytes from 8192 bytes  
+       RAM: 318 bytes from 8192 bytes  
        Flash: 4372 bytes from 253952 bytes  
 Temps mouyen d'éxécution 0.02ms  
 Temps maximum 0.15ms  (seulement 10 tours de cycle > 8ms)  
