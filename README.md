@@ -8,7 +8,7 @@
    Temps de cycle [9999]  moyen 0.016 ms  max 0.125  >0.030 25  >>0.120 1  
  
    Temps de cycle : Nom donné à l'instance  
-   [9999]         : nombre de tour de cycle (affichage limité à 9999)  
+   (9999)         : nombre de tour de cycle (affichage limité à 9999)  
    moyen 0.016 ms : temps moyen d'éxécution  
    max 0.128      : temps max constaté  
    \>0.030 25      : Le premier seuil de 0.030 ms a été dépassé 25 fois  
