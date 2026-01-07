@@ -11,9 +11,9 @@
    [9999]         : nombre de tour de cycle (affichage limité à 9999)  
    moyen 0.016 ms : temps moyen d'éxécution  
    max 0.128      : temps max constaté  
-   >0.030 25      : Le premier seuil de 0.030 ms a été dépassé 25 fois  
+   \>0.030 25      : Le premier seuil de 0.030 ms a été dépassé 25 fois  
            (on ne comptabilise pas ici les dépassements de second seuil)  
-   >>0.120 1      : le second seuil de 0.120 ms a été dépassé qu'une fois  
+   \>>0.120 1      : le second seuil de 0.120 ms a été dépassé qu'une fois  
  
    Création de Class : yTempsCycle TempsCycle("Temps de cycle", 5, 0.03, 0.13);  
        "Temps de cycle" : Nom modifiable  
