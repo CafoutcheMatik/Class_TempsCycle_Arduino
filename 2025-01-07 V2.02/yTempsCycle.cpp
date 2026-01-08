@@ -28,12 +28,13 @@
  *
  *  TempsCycle.newTxt : nouveau affichage formaté
  *  TempsCycle.texte1 et TempsCycle.texte2 : affichage
- * 
+ *
  *  Possibilité de mesurer le temps d'une partie de code en plaçant start stop
  *  TempsCycle.start();
  *  /.   votre code   ./
  *  TempsCycle.stop();
- *  (On laisse TempsCycle.loop(); dans la boucle loop() pour la gestion de l'affichage)
+ *  (On laisse TempsCycle.loop(); dans la boucle loop() pour la gestion de
+ * l'affichage)
  *
  *  Pour limiter l'impact sur le temps de cycle la mise en forme est decomposée
  *  opération par opération le serial.print se fait 6 carcatères pas 6
@@ -267,8 +268,14 @@ void yTempsCycle::gestionAffichage() {
       printTour++;
       break;
     case 6:
-      ajout_au_texte(texte1, PSTR(")  moyen "), f_tempVal, nb_decimale);
-      printTour++;
+      if (valCompteurPrint > 0) {
+        ajout_au_texte(texte1, PSTR(")  moyen "), f_tempVal, nb_decimale);
+        printTour++;
+      } else {
+        strcat_P(texte1, PSTR(")"));
+        texte2[0] = '\0';
+        printTour = 15;
+      }
       break;
     case 7:  // ******************    TEXTE 2 : "  max " + Valeur
       f_tempVal = (float)valTpsMaxPrint / (float)1000.00;
@@ -311,6 +318,7 @@ void yTempsCycle::gestionAffichage() {
       ajout_au_texte(texte2, PSTR(" "), auxFloat, nb_decimale);
       printTour++;
       break;
+      //
     case 15:  // ****************    GESTION ENVOI
       newTxt = true;
       ptrPrintCurrent = texte1;

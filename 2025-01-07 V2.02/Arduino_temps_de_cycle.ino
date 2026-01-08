@@ -3,6 +3,8 @@
 #include <Arduino.h>
 #include "yTempsCycle.h"
 
+unsigned long memMillis = 0;  
+
 //
 yTempsCycle TempsCycle("tps de cycle", 5, .030, 0.13);
 //
